@@ -25,6 +25,7 @@ H1btools can use both linux (cluster) and mac machine.
 *************************************************************************
 
 NOTICE: H1bTools beginning analysis at Fri Oct 26 10:42:07 2018
+
 usage: H1bTools.v3.py [-h] -I The data file, which contains all the data
                       [-out1 Top 10 occupations] [-out2 Top 10 states]
                       [-N TOP_INT] [-Cer_index CER_INDEX]
