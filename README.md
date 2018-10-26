@@ -54,6 +54,7 @@ optional arguments:
                         
 # Example
 Which can be used simply by following command:
+
 python H1bTools.v3.py -I H-1B_Disclosure_Data_FY17.csv
 
 After running the above command, you will get the follwing files in the same directory:
@@ -68,6 +69,11 @@ However, the code can be also used if you do you like to top 20 or 30 or any top
 
 
 python H1bTools.v3.py -I H-1B_Disclosure_Data_FY17.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc
+
+
+We used default columns for CASE_STATUS, SOC_CODE and WORKSITE_STATE in input file such as CASE_STATUS on column 2, SOC_CODE 24 and WORKSITE_STATE 50, however if it is different than that, we can specfiy in commanline by using the following command:
+
+python H1bTools.v3.py -I H-1B_Disclosure_Data_FY17.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc Cstatus_index
 
 
 
