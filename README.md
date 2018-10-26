@@ -15,13 +15,15 @@ https://www.foreignlaborcert.doleta.gov/performancedata.cfm
 H1btools can use both linux (cluster) and mac machine. 
 
  python H1bTools.v3.py --help
-% ************************************************************************* 
+
+************************************************************************* 
   * H1bTools 
  * Version 3.0.0 
  * (C) 2018-2018 Nephrology Dept of Medicine 
  * Columbia University Medical Center 
- 
- % *************************************************************************
+
+*************************************************************************
+
 NOTICE: H1bTools beginning analysis at Fri Oct 26 10:42:07 2018
 usage: H1bTools.v3.py [-h] -I The data file, which contains all the data
                       [-out1 Top 10 occupations] [-out2 Top 10 states]
