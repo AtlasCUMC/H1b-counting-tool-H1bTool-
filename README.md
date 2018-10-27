@@ -2,17 +2,17 @@
 
 ## Introduction
 
-H1btools is command line computational tool, which can be used for H1b visa related analysis. I delvelped H1btools in python, which can be used for any type of data from state department for H1b related.
+H1btools is command line computational tool, which can be used for H1b visa related analysis. I devoloped H1btools in python platform, which can be used for any type of data from state department for H1b related visas.
 
 ## Useful database
 
-We used for the following data 
+We used for the following data to test H1bTools: 
 
 https://www.foreignlaborcert.doleta.gov/performancedata.cfm
 
 ## Usage
 
-H1btools can use both linux (cluster) and mac machine. 
+H1btools can use in both linux (cluster) and mac machine. 
 
  python H1bTools.v3.py --help
 
@@ -51,13 +51,23 @@ optional arguments:
   -state_index STATE_INDEX, --state_index STATE_INDEX
                         The state column in the input file
                         
-                        
+
+# H1bTools Input files
+
+H1bTools require the csv file (comma separated file) and there will be _NO COMMA_ between in csv file such as if:
+
+COMPUTER, INFORMATION and SYSTEMS MANAGERS
+
+From the above, should be remove the comma since in current version H1bTools is comman sensittaive, you comma to space, and etct. In our H1bTools future version, we will try our best to overcome this issue. 
+
+
 # Example
-Which can be used simply by following command:
 
-python H1bTools.v3.py -I H-1B_Disclosure_Data_FY17.csv
+## H1bTools Default (Certified Visas)
 
-After running the above command, you will get the follwing files in the same directory:
+python H1bTools.v3.py -I h1b_input.csv
+
+After running the above command, you will get the follwing files in the same directory, which contains top 10 occupations and states:
 
 
 Top 10 occupations: top_10_occupations.txt 
@@ -65,26 +75,26 @@ Top 10 occupations: top_10_occupations.txt
 Top 10 States: top_10_states.txt
 
 
-However, the code can be also used if you do you like to top 20 or 30 or any top, you can use extra flag:
+However, the code can be also used if you do you like top 20 or 30 or any, you can use the extra flag -N in H1bTools:
 
 
 python H1bTools.v3.py -I H-1B_Disclosure_Data_FY17.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc
 
 
-We used default columns for CASE_STATUS, SOC_CODE and WORKSITE_STATE in input file such as CASE_STATUS on column 2, SOC_CODE 24 and WORKSITE_STATE 50, however if it is different than that, we can specfiy in commanline by using the following command:
+We used default columns for CASE_STATUS, SOC_CODE and WORKSITE_STATE in input file such as CASE_STATUS on column 2, SOC_CODE 24 and WORKSITE_STATE 50, however if it is different than that, we can specifiy in commandline them by using the following command:
 
-python H1bTools.v3.py -I H-1B_Disclosure_Data_FY17.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc Cstatus_index
+python H1bTools.v3.py -I h1b_input.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc Cstatus_index
 
+## H1bTools for other cases (such as CERTIFIED-WITHDRAWN, DENIED and WITHDRAWN)
 
+H1bTools can be also used to see summary of the CERTIFIED-WITHDRAWN, DENIED and WITHDRAWN if interested by using the following command with extrat flag:
 
+ python  H1bTools.v6.py  -I h1b_input.csv -Cstatus CERTIFIED-WITHDRAWN OR DENIED OR WITHDRAWN
+ 
+ It will provide the summay of the CERTIFIED-WITHDRAWN OR DENIED OR WITHDRAWN if interested.
 
+# Author
 
+Atlas Khan, Department of Medicine (Division Nephrology), Columbia University Medical Centre, New York, USA.
 
-
-
-
-
-
-
-
-
+Email: ak4046@cumc.columbia.edu and atlas.akhan@gmail.com
