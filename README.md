@@ -14,7 +14,7 @@ https://www.foreignlaborcert.doleta.gov/performancedata.cfm
 
 H1btools can use in both Linux (cluster) and MAC machine. 
 
-    python  H1bTools.v6.py  --help
+    python  H1bTools.v3.py  --help
     ************************************************************************* 
       * H1bTools 
      * Version 3.0.0 
@@ -83,7 +83,7 @@ However, the code can be also used if you do you like top 20 or 30 or any, you c
 
 We used the default columns for CASE_STATUS, SOC_CODE and WORKSITE_STATE in the input file such as CASE_STATUS on column 2, SOC_CODE 24 and WORKSITE_STATE 50 in the input file, however if it is different than that, we can specify them in command line them by using the following command:
 
-    python H1bTools.v3.py -I h1b_input.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc Cstatus_index (CASE_STATUS) 2 OR 3 etc -SOC_CODE 24 OR etc   -WORKSITE_STATE 50 OR ETC
+    python H1bTools.v3.py -I h1b_input.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc -Cstatus_index (CASE_STATUS) 2 (column 2) OR 3 (column 3) etc -SOC_CODE 24 (column 24) OR etc -WORKSITE_STATE 50 (column 50) OR ETC
 
 ## H1bTools for other cases (such as CERTIFIED-WITHDRAWN, DENIED and WITHDRAWN)
 
