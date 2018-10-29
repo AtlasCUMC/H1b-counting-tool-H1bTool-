@@ -65,7 +65,7 @@ You should be remove the comma from the above line since in current version H1bT
 
 ## H1bTools Default (Certified Visas)
 
-python H1bTools.v3.py -I h1b_input.csv
+    python H1bTools.v3.py -I h1b_input.csv
 
 After running the above command, you will get the following files in the same directory, which contain top 10 occupations and states respectively:
 
@@ -78,18 +78,18 @@ Top 10 States: top_10_states.txt
 However, the code can be also used if you do you like top 20 or 30 or any, you can use the extra flag _-N_ in H1bTools:
 
 
-python H1bTools.v3.py  –I h1b_input.csv  -N _1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50)_ etc
+    python H1bTools.v3.py  –I h1b_input.csv  -N _1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50)_ etc
 
 
 We used the default columns for CASE_STATUS, SOC_CODE and WORKSITE_STATE in the input file such as CASE_STATUS on column 2, SOC_CODE 24 and WORKSITE_STATE 50 in the input file, however if it is different than that, we can specify them in command line them by using the following command:
 
-python H1bTools.v3.py -I h1b_input.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc Cstatus_index (CASE_STATUS) 2 OR 3 etc -SOC_CODE 24 OR etc   -WORKSITE_STATE 50 OR ETC
+    python H1bTools.v3.py -I h1b_input.csv -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50) etc Cstatus_index (CASE_STATUS) 2 OR 3 etc -SOC_CODE 24 OR etc   -WORKSITE_STATE 50 OR ETC
 
 ## H1bTools for other cases (such as CERTIFIED-WITHDRAWN, DENIED and WITHDRAWN)
 
 H1bTools can be also used to see summary of the CERTIFIED-WITHDRAWN, DENIED and WITHDRAWN if interested by using the following command with extra flag:
 
- python  H1bTools.v6.py  -I h1b_input.csv -Cstatus CERTIFIED-WITHDRAWN OR DENIED OR WITHDRAWN
+     python  H1bTools.v6.py  -I h1b_input.csv -Cstatus CERTIFIED-WITHDRAWN OR DENIED OR WITHDRAWN
  
  It will provide the summary of the CERTIFIED-WITHDRAWN OR DENIED OR WITHDRAWN if user interested.
 
