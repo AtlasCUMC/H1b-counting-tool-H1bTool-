@@ -14,50 +14,42 @@ https://www.foreignlaborcert.doleta.gov/performancedata.cfm
 
 H1btools can use in both Linux (cluster) and MAC machine. 
 
-    python H1bTools.v3.py --help
-
+    python  H1bTools.v6.py  --help
     ************************************************************************* 
-    * H1bTools 
-    * Version 3.0.0 
-    * (C) 2018-2018 Nephrology Dept. of Medicine 
-    * Columbia University Medical Center 
+      * H1bTools 
+     * Version 3.0.0 
+     * (C) Oct 24, 2018- Oct 30, 2018 Nephrology Dept of Medicine 
+     * Columbia University Medical Center 
 
-    *************************************************************************
+     *************************************************************************
+    NOTICE: H1bTools beginning analysis at Mon Oct 29 11:54:51 2018
+    usage: H1bTools.v3.py [-h] -I The data file, which contains all the data
+                          [-out1 Top 10 occupations] [-out2 Top 10 states]
+                          [-N TOP_INT] [-Cstatus_index CSTATUS_INDEX]
+                          [-Occ_index OCC_INDEX] [-State_index STATE_INDEX]
+                          [-Cstatus CSTATUS]
 
-NOTICE: H1bTools beginning analysis at Fri Oct 26 10:42:07 2018
+    The H1bTools is computational tool, which can be use for H1b visa related
+    analysis:
 
-usage: H1bTools.v3.py [-h] -I The data file, which contains all the data
-
-                        [-out1 Top 10 occupations] [-out2 Top 10 states]
-
-                        [-N TOP_INT] [-Cer_index CER_INDEX]
-
-                        [-Occ_index OCC_INDEX] [-state_index STATE_INDEX]
-
-
-The H1bTools is computational tool, which can be used for H1b visa related
-analysis:
-
-
-optional arguments:
-
-
-  
-    -h, --help          show this help message and exit
-                        -I The data file, which contains all the data, --Input The data file, which contains all the data
-                        The data of H1b application
-                        -out1 Top 10 occupations, --o1 Top 10 occupations
-                        The output file of top 10 occupations
-                        -out2 Top 10 states, --o2 Top 10 states
-                        The output file of top 10 States
-                        -N TOP_INT, --top_int TOP_INT
-                        Percentage of top 10 occupations and States
-                        -Cer_index CER_INDEX, --Cer_index CER_INDEX
-                        The certified column in the input file
-                        -Occ_index OCC_INDEX, --Occ_index OCC_INDEX
-                        The occupations column in the input file
-                        -state_index STATE_INDEX, --state_index STATE_INDEX
-                        The state column in the input file
+    optional arguments:
+      -h, --help            show this help message and exit
+      -I The data file, which contains all the data, --Input The data file, which contains all the data
+                            The data of H1b application
+      -out1 Top 10 occupations, --o1 Top 10 occupations
+                            The output file of top 10 occupations
+      -out2 Top 10 states, --o2 Top 10 states
+                            The output file of top 10 States
+      -N TOP_INT, --top_int TOP_INT
+                            Percentage of top 10 occupations and States
+      -Cstatus_index CSTATUS_INDEX, --Cstatus_index CSTATUS_INDEX
+                            The certified column in the input file
+      -Occ_index OCC_INDEX, --Occ_index OCC_INDEX
+                            The occupations column in the input file
+      -State_index STATE_INDEX, --State_index STATE_INDEX
+                            The state column in the input file
+      -Cstatus CSTATUS, --Cstatus CSTATUS
+                            The status of the case
                         
 
 # H1bTools Input files
