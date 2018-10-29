@@ -10,6 +10,10 @@ We used the following data to test H1bTools:
 
 https://www.foreignlaborcert.doleta.gov/performancedata.cfm
 
+## Download 
+
+clone https://github.com/AtlasCUMC/H1b-counting-tool-H1bTool-.git
+
 ## Usage
 
 H1btools can use in both Linux (cluster) and MAC machine. 
