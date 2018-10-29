@@ -86,7 +86,7 @@ Top 10 States: top_10_states.txt
 However, the code can be also used if you do you like top 20 or 30 or any, you can use the extra flag _-N_ in H1bTools:
 
 
-    python H1bTools.v3.py  –I h1b_input.csv  -N _1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50)_ etc
+    python H1bTools.v3.py  –I h1b_input.csv  -N 1 (for example top 1) OR 5 (for example top 5) 50 (for example top 50)_ etc
 
 
 We used the default columns for CASE_STATUS, SOC_CODE and WORKSITE_STATE in the input file such as CASE_STATUS on column 2, SOC_CODE 24 and WORKSITE_STATE 50 in the input file, however if it is different than that, we can specify them in command line them by using the following command:
