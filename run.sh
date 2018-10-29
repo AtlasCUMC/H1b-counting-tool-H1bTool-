@@ -1,7 +1,10 @@
 #!/bin/bash
-#
-# Use this shell script to compile (if necessary) your code and then execute it. Below is an example of what might be found in this file if your program was written in Python
+# H1bTools can run simply by the following commands.
 
-# CERTIFIED
+# CERTIFIED (Default)
+
 #python ./src/H1bTools.v3.py -I /input/h1b_input.csv -out1 /output/top_10_occupations.txt -out2 /output/top_10_states.txt
 
+
+# CERTIFIED-WITHDRAWN, WITHDRAWN or DENIED
+#python ./src/H1bTools.v3.py -I /input/h1b_input.csv -out1 /output/top_10_occupations.txt -out2 /output/top_10_states.txt -Cstatus CERTIFIED-WITHDRAWN OR WITHDRAWN OR DENIED 
