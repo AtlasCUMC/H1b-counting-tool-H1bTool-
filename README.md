@@ -12,7 +12,7 @@ https://www.foreignlaborcert.doleta.gov/performancedata.cfm
 
 ## Download 
 
-clone https://github.com/AtlasCUMC/H1b-counting-tool-H1bTool-.git
+git clone https://github.com/AtlasCUMC/H1b-counting-tool-H1bTool-.git
 
 OR
 
