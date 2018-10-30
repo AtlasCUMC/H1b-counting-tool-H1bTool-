@@ -3,7 +3,7 @@
 
 # CERTIFIED (Default)
 
-python ./src/H1bTools.v3.py -I ./h1b_statistics/insight_testsuite/tests/test_1/input/h1b_input.csv -out1 /output/top_10_occupations.txt -out2 /output/top_10_states.txt
+python ./src/H1bTools.v3.py -I ./H1b-counting-tool-H1bTool-/insight_testsuite/tests/test_1/input/h1b_input.csv -out1 ./H1b-counting-tool-H1bTool-/insight_testsuite/tests/test_1/output/top_10_occupations.txt -out2 ./H1b-counting-tool-H1bTool-/insight_testsuite/tests/test_1/output/top_10_states.txt
 
 
 # CERTIFIED-WITHDRAWN, WITHDRAWN or DENIED
